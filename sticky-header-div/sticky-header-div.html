@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>Sticky Header Div</title>
+		<style>
+			body{
+				font-family: Roboto, Arial, sans-serif;
+				margin: 0;
+			}
+			.card-style{
+				display:flex; 
+				flex-direction: column; 
+				margin: 1%; 
+				box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12); 
+				border-radius: 4px;
+			}
+			.card-content{
+				padding: 16px;
+			}
+			.container{
+				display: flex; 
+				flex-direction: column; 
+				top: 0; 
+				bottom: 0; 
+				right: 0; 
+				left: 0;
+			}
+			.header{
+				background-color:blue;
+				color: white; 
+				width: 100%; 
+				position: sticky; 
+				top: 0;
+				height: 10vh;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header"><h1 style="margin:0;">Header Content</h1></div>
+			<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+				<div class="card-style">
+					<div class="card-content">
+						<div><span>Blog Title 1 - Analysis<span></div>
+						<div><span>20-Nov-2020</span></div>
+					</div>
+				</div>
+				<div class="card-style">
+					<div class="card-content">
+						<div><span>Blog Title 1 - Analysis<span></div>
+						<div><span style="font-style:italic;">20-Nov-2020</span></div>
+					</div>
+				</div>
+				<div class="card-style">
+					<div class="card-content">
+						<div><span>Blog Title 1 - Analysis<span></div>
+						<div><span>20-Nov-2020</span></div>
+					</div>
+				</div>
+				<div class="card-style">
+					<div class="card-content">
+						<div><span>Blog Title 1 - Analysis<span></div>
+						<div><span>20-Nov-2020</span></div>
+					</div>
+				</div>
+				<div class="card-style">
+					<div class="card-content">
+						<div><span>Blog Title 1 - Analysis<span></div>
+						<div><span>20-Nov-2020</span></div>
+					</div>
+				</div>
+				<div class="card-style">
+					<div class="card-content">
+						<div><span>Blog Title 1 - Analysis<span></div>
+						<div><span>20-Nov-2020</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
